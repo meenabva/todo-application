@@ -1,0 +1,12 @@
+.filter-bar {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: var(--clr-gb-4);
+    padding: 20px;
+    color: white;
+}
+
+.navbar {
+    background-color: var(--clr-gb-5);
+}

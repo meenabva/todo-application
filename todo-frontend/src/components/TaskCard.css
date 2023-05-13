@@ -1,0 +1,29 @@
+.card {
+    background-color: var(--clr-card-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+    color: var(--clr-primary);
+}
+
+.card-footer {
+  width: 100%;
+  background-color: transparent;
+}
+
+.icons {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.card-btn {
+  background-color: var(--clr-gb-6);
+  padding: 5px;
+}
+
+#dropdown-basic {
+  background-color: transparent;
+  border: 0;
+}
