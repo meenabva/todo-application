@@ -42,7 +42,7 @@ export function TaskBox(props){
         {task.title && 
             <div class="card mx-2 my-2 p-4" style={style}>
                     <span className='icons'>
-                        <div class="btn btn-outline-danger btn-sm float-left">{ new Date(task.deadline).toLocaleDateString() }</div>
+                        <div class="btn btn-danger btn-sm float-left rounded-pill date-btn">{ new Date(task.deadline).toLocaleDateString() }</div>
                         <div class="dropdown float-right">
                             <Dropdown>
                                 <Dropdown.Toggle id="dropdown-basic" variant='dark' size="sm" bsPrefix="p-0 b-0">
@@ -59,8 +59,8 @@ export function TaskBox(props){
                     </span>
                 <div class="border-0">
                     <h5 class="card-title">{ task.title }</h5>
-                </div>
-                <div className='card-footer border-0 float-right m-0 px-0'>
+                {/* </div>
+                <div className='border-0 float-right m-0 px-0'> */}
                     {!task.completed && 
                         <button 
                         type="button" 

@@ -13,13 +13,13 @@ export const TodoList = () => {
         getTaskList()
     }, [])
 
-    const sortTasks = () => {
+    /* const sortTasks = () => {
         let taskList = tasks
         taskList.sort((task1, task2) => {
             return Math.abs(Date.parse(task1.deadline) - Date.parse(task2.deadline))
         })
         setTasks(taskList)
-    }
+    } */
 
     const getTaskList = async () => {
         let data = await getAllTasks()
@@ -56,10 +56,11 @@ export const TodoList = () => {
                     label="Show Completed Tasks"
                     value={switchCompleted}
                     onChange={filterTasks}
+                    defaultChecked={true}
                 />
             </Form>
             </div>
-            <div class="row">
+            <div className="row">
                 {
                     tasks.map(task =>
                         <TaskBox task={task} key={task.id} />

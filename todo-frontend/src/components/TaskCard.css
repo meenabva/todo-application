@@ -15,7 +15,6 @@
 .icons {
   width: 100%;
   text-align: right;
-  margin-bottom: 15px;
 }
 
 .card-btn {
@@ -26,4 +25,8 @@
 #dropdown-basic {
   background-color: transparent;
   border: 0;
+}
+
+.date-btn {
+  font-size: 10px;
 }
